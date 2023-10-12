@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lato:wght@400;700&family=Montserrat:wght@200;500;600;700&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="chat-editor">
+      <div class="editor-tabs">
+        <div class="editor-tab" id="reply-tab">Reply</div>
+        <div class="editor-tab" id="notes-tab">Notes</div>
+      </div>
+      <textarea
+        class="chat-input"
+        placeholder="Type your message..."
+        rows="4"
+      ></textarea>
+      <div class="format-options">
+        <i class="fa-regular fa-face-smile" id="face-smile"></i>
+        <i class="fa-solid fa-bold" id="bold"></i>
+        <i class="fa-solid fa-italic" id="italic-button"></i>
+        <i class="fa-solid fa-underline" id="underline-button"></i>
+        <i class="fa-solid fa-text-slash" id="text-slash"></i>
+        <i class="fa-solid fa-code" id="code"></i>
+        <i class="fa-solid fa-paperclip" id="paperclip"></i>
+        <input type="file" id="file-input" />
+        <input type="file" class="attachment-input" id="attachment" multiple />
+        <label for="attachment" class="attach-button">
+          <i class="fa-regular fa-paper-plane" id="send-button"></i>
+        </label>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
